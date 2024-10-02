@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-item">
+            <div>
+                <img src="image 1.png" alt="">
+            </div>
+            <!-- hamburger -->
+            <div class="mobile-menu"><ul>
+                <li>
+                    <img src="image 1.png" alt="">
+                </li>
+                <li onclick=hideMenuIcon()><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li>
+                    <select name="Home" id="Home" class="text-underline-hover">Home
+                        <option value="Home">Home one</option>
+                        <option value="Home">Home two</option>
+                        <option value="Home">Home three</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="page" id="Page" class="text-underline-hover">Page
+                        <option value="Page">Page one</option>
+                        <option value="Page">Page two</option>
+                        <option value="Page">Page three</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="Portfolio" id="Portfolio" class="text-underline-hover">Portfolio
+                        <option value="Portfolio">Portfolio one</option>
+                        <option value="Portfolio">Portfolio two</option>
+                        <option value="Portfolio">Portfolio three</option>
+                    </select>
+                </li>
+                <li><a class="text-underline-hover" href="">Contact</a></li>
+                <li id="btn-style">
+                    <a class="text-underline-hover">Join us with</a>
+                </li>
+            </ul>
+        </div>
+        <!--  -->
+            <div class="list-item">
+                <ul>
+                    <li class="hideOnMobile">
+                        <select name="Home" id="Home" class="text-underline-hover">Home
+                            <option value="Home">Home one</option>
+                            <option value="Home">Home two</option>
+                            <option value="Home">Home three</option>
+                        </select>
+                    </li>
+                    <li class="hideOnMobile">
+                        <select name="page" id="Page" class="text-underline-hover">Page
+                            <option value="Page">Page one</option>
+                            <option value="Page">Page two</option>
+                            <option value="Page">Page three</option>
+                        </select>
+                    </li>
+                    <li class="hideOnMobile">
+                        <select name="Portfolio" id="Portfolio" class="text-underline-hover">Portfolio
+                            <option value="Portfolio">Portfolio one</option>
+                            <option value="Portfolio">Portfolio two</option>
+                            <option value="Portfolio">Portfolio three</option>
+                        </select>
+                    </li>
+                    <li class="hideOnMobile"><a class="text-underline-hover" href="">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <li class="hideOnMobile" id="btn-style">
+                <a class="text-underline-hover">Join us with</a>
+            </li>
+            
+            <li onclick=showMenuIcon() class="menuBtn">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a>
+            </li>
+        </div>
+    </nav>
+
+    <script>
+        function showMenuIcon(){
+            const menuIcon = document.querySelector('.mobile-menu');
+            menuIcon.style.left = '0';
+        }
+        function hideMenuIcon(){
+            const menuIconHide = document.querySelector('.mobile-menu');
+            menuIconHide.style.left = '-100%'; 
+        }
+    </script>
+</body>
+</html>

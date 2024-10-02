@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+.nav-item{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    /* background-color: gray; */
+    align-items: center;
+    border-bottom: 1px solid #E8E8E8;
+}
+.list-item ul{
+    display: flex;
+    gap: 36px;
+    font-size: 18px;
+    
+}
+.list-item ul li{
+    font-weight: 600;
+    list-style: none;
+    
+    
+}
+.list-item ul li select option{
+    border: none;
+    padding-left: 20px;
+    outline: none;
+}
+.list-item ul li select{
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    color: #343434;
+   
+}
+.list-item ul li a{
+    text-decoration-line: none;
+    color: #343434;
+}
+.text-underline-hover:hover{
+    text-decoration: underline;
+    text-decoration-color: #343434;
+    text-decoration-thickness: 1px;
+    padding-bottom: 2px;
+}
+#btn-style{
+    font-size: 19px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100vh;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: left 0.3s ease-in-out;
+}
+.mobile-menu ul li{
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    color: #343434;
+    display: flex;
+    align-items: center;
+    
+}
+
+.mobile-menu li{
+    width: 100%;
+
+}
+.menuBtn{
+    display: none;
+}
+/* Responsive navbar */
+@media (max-width: 992px){
+    .list-item ul li select{
+    text-decoration: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    }
+    .list-item ul{
+        gap: 20px;
+    }
+    .list-item ul li select option{
+        border: none;
+        padding-left: 10px;
+        outline: none;
+    }
+}
+@media (max-width: 768px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menuBtn{
+        display: block;
+    }
+    
+}
+@media (max-width: 480px) {
+    .mobile-menu{
+        width: 100%;
+    }
+}
