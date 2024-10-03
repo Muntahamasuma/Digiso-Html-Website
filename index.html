@@ -115,11 +115,12 @@
     <script>
         function showMenuIcon(){
             const menuIcon = document.querySelector('.mobile-menu');
-            menuIcon.style.left = '0';
+            menuIcon.classList.add('active'); 
         }
+        
         function hideMenuIcon(){
             const menuIconHide = document.querySelector('.mobile-menu');
-            menuIconHide.style.left = '-100%'; 
+            menuIconHide.classList.remove('active'); 
         }
     </script>
 </body>
