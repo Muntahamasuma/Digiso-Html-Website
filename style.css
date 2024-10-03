@@ -331,17 +331,91 @@
     font-family: "Bricolage Grotesque", sans-serif;
 }
 .feature-secvice p{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     color: #787878;
     font-family: "Bricolage Grotesque", sans-serif;
 }
+.feature-secvice button{
+    border-radius: 100px;
+    padding: 30px;
+    font-size: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: #000;
+    font-weight: 700;
+    border: 1px solid #E1E1E1;
+    background-color: white;
+}
+.feature-secvice button:hover{
+    background-color: #D6FFC8;
+}
 .rightSide{
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 .Planning{
-    height: 200px;
-    width: 200px;
-    border:  2px solid black;
+    width: 500px;
+    border:  2px solid #E1E1E1;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.Planning h4{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.Planning button{
+    text-decoration: none;
+    border: none;
+    background:none;
+    color: #000;
+    font-size: 18px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+/*  */
+.Branding{
+    width: 500px;
+    border:  2px solid #E1E1E1;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.Branding h4{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.Branding button{
+    text-decoration: none;
+    border: none;
+    background:none;
+    color: #000;
+    font-size: 18px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+/*  */
+.Marketing{
+    width: 500px;
+    border:  2px solid #E1E1E1;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.Marketing h4{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.Marketing button{
+    text-decoration: none;
+    border: none;
+    background:none;
+    color: #000;
+    font-size: 18px;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
