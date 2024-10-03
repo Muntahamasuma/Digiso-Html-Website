@@ -419,3 +419,61 @@
     font-size: 18px;
     font-family: "Bricolage Grotesque", sans-serif;
 }
+/* Responsive */
+@media (max-width: 992px){
+    .rightSide{
+        margin: auto;
+    }
+}
+@media (max-width: 768px) {
+    .rightSide{
+        margin: auto;
+    }
+    .feature-secvice{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .Planning{
+        width: 250px;
+        border:  2px solid #E1E1E1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+        text-align: center;
+    }
+    .Branding{
+        width: 250px;
+        border:  2px solid #E1E1E1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6px;
+        text-align: center;
+    }
+    .Marketing{
+        width: 250px;
+        border:  2px solid #E1E1E1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6px;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .rightSide{
+        margin: auto;
+    }
+    .feature-secvice{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
