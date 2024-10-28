@@ -1,303 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digiso</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/bars?f=classic&s=solid"
+    />
+  </head>
+  <body>
     <nav class="nav">
-        <div class="nav-item">
-            <div>
-                <img src="image 1.png" alt="">
-            </div>
-            <!-- hamburger -->
-            <div class="mobile-menu"><ul>
-                <li>
-                    <img src="image 1.png" alt="">
-                </li>
-                <li onclick=hideMenuIcon()><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                <li>
-                    <select name="Home" id="Home" class="text-underline-hover">Home
-                        <option value="Home">Home one</option>
-                        <option value="Home">Home two</option>
-                        <option value="Home">Home three</option>
-                    </select>
-                </li>
-                <li>
-                    <select name="page" id="Page" class="text-underline-hover">Page
-                        <option value="Page">Page one</option>
-                        <option value="Page">Page two</option>
-                        <option value="Page">Page three</option>
-                    </select>
-                </li>
-                <li>
-                    <select name="Portfolio" id="Portfolio" class="text-underline-hover">Portfolio
-                        <option value="Portfolio">Portfolio one</option>
-                        <option value="Portfolio">Portfolio two</option>
-                        <option value="Portfolio">Portfolio three</option>
-                    </select>
-                </li>
-                <li><a class="text-underline-hover" href="">Contact</a></li>
-                <li id="btn-style">
-                    <a class="text-underline-hover">Join us with</a>
-                </li>
-            </ul>
+      <div class="nav-item">
+        <div>
+          <img src="image 1.png" alt="" />
+        </div>
+        <!-- hamburger -->
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <img src="image 1.png" alt="" />
+            </li>
+            <li onclick="hideMenuIcon()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="32px"
+                viewBox="0 -960 960 960"
+                width="32px"
+                fill="#5f6368"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <select name="Home" id="Home" class="text-underline-hover">
+                Home
+                <option value="Home">Home one</option>
+                <option value="Home">Home two</option>
+                <option value="Home">Home three</option>
+              </select>
+            </li>
+            <li>
+              <select name="page" id="Page" class="text-underline-hover">
+                Page
+                <option value="Page">Page one</option>
+                <option value="Page">Page two</option>
+                <option value="Page">Page three</option>
+              </select>
+            </li>
+            <li>
+              <select
+                name="Portfolio"
+                id="Portfolio"
+                class="text-underline-hover"
+              >
+                Portfolio
+                <option value="Portfolio">Portfolio one</option>
+                <option value="Portfolio">Portfolio two</option>
+                <option value="Portfolio">Portfolio three</option>
+              </select>
+            </li>
+            <li><a class="text-underline-hover" href="">Contact</a></li>
+            <li id="btn-style">
+              <a class="text-underline-hover">Join us with</a>
+            </li>
+          </ul>
         </div>
         <!--  -->
-            <div class="list-item">
-                <ul>
-                    <li class="hideOnMobile">
-                        <select name="Home" id="Home" class="text-underline-hover">Home
-                            <option value="Home">Home one</option>
-                            <option value="Home">Home two</option>
-                            <option value="Home">Home three</option>
-                        </select>
-                    </li>
-                    <li class="hideOnMobile">
-                        <select name="page" id="Page" class="text-underline-hover">Page
-                            <option value="Page">Page one</option>
-                            <option value="Page">Page two</option>
-                            <option value="Page">Page three</option>
-                        </select>
-                    </li>
-                    <li class="hideOnMobile">
-                        <select name="Portfolio" id="Portfolio" class="text-underline-hover">Portfolio
-                            <option value="Portfolio">Portfolio one</option>
-                            <option value="Portfolio">Portfolio two</option>
-                            <option value="Portfolio">Portfolio three</option>
-                        </select>
-                    </li>
-                    <li class="hideOnMobile"><a class="text-underline-hover" href="">Contact</a></li>
-                    
-                </ul>
-            </div>
-            <li class="hideOnMobile" id="btn-style">
-                <a class="text-underline-hover">Join us with</a>
+        <div class="list-item">
+          <ul>
+            <li class="hideOnMobile">
+              <select name="Home" id="Home" class="text-underline-hover">
+                Home
+                <option value="Home">Home one</option>
+                <option value="Home">Home two</option>
+                <option value="Home">Home three</option>
+              </select>
             </li>
-            
-            <li onclick=showMenuIcon() class="menuBtn">
-                <a>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-                </a>
+            <li class="hideOnMobile">
+              <select name="page" id="Page" class="text-underline-hover">
+                Page
+                <option value="Page">Page one</option>
+                <option value="Page">Page two</option>
+                <option value="Page">Page three</option>
+              </select>
             </li>
+            <li class="hideOnMobile">
+              <select
+                name="Portfolio"
+                id="Portfolio"
+                class="text-underline-hover"
+              >
+                Portfolio
+                <option value="Portfolio">Portfolio one</option>
+                <option value="Portfolio">Portfolio two</option>
+                <option value="Portfolio">Portfolio three</option>
+              </select>
+            </li>
+            <li class="hideOnMobile">
+              <a class="text-underline-hover" href="">Contact</a>
+            </li>
+          </ul>
         </div>
+        <li class="hideOnMobile" id="btn-style">
+          <a class="text-underline-hover">Join us with</a>
+        </li>
+
+        <li onclick="showMenuIcon()" class="menuBtn">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </div>
     </nav>
 
     <!-- header -->
-     <header class="header-style">
+    <header class="header-style">
+      <div>
+        <h1>
+          Next-Gen <br />
+          Storytelling <br />
+          Digital Agency
+        </h1>
+        <p>
+          Etiam sed odio dictum, tempus velit non, sollicitudin neque. <br />
+          Donec quis aliquet velit. Aliquam convallis dapibus purus.
+        </p>
+
+        <button>Explore More</button>
+      </div>
+      <div class="img-section">
+        <img src="image 2.png" alt="" />
+
+        <div class="header-img-style">
+          <div class="years-Experience">
+            <h2>10+</h2>
+            <h4>
+              Years of <br />
+              Experience
+            </h4>
+          </div>
+          <div class="divider"></div>
+          <div class="projects-handover">
+            <h2>710+</h2>
+            <h4>
+              Projects <br />
+              handover
+            </h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- global brands section -->
+    <section class="global-brands-section">
+      <h2>
+        We're thrilled to partner with some <br />
+        of the biggest global brands
+      </h2>
+      <p>
+        Crafting compelling digital experiences that captivate audiences and
+        drive meaningful connections.
+      </p>
+      <!-- brands logo -->
+      <div class="brands-logo">
+        <img src="image 3.png" alt="" />
+        <img src="image.png" alt="" />
+        <img src="image (1).png" alt="" />
+        <img src="image (2).png" alt="" />
+        <img src="image (3).png" alt="" />
+      </div>
+      <!-- img -->
+      <div class="brands-img">
+        <img src="image 3 (1).png" alt="" />
+      </div>
+    </section>
+    <!--  Feature Service -->
+    <section class="feature-secvice">
+      <div>
+        <h2>Our Feature Services</h2>
+        <p>
+          Etiam sed odio dictum, tempus velit non, sollicitudin neque. <br />
+          Donec quis aliquet velit. Aliquam convallis dapibus purus.
+        </p>
+        <button>
+          View <br />
+          All <br />
+          Services
+        </button>
+      </div>
+      <div class="rightSide">
+        <div class="Planning">
+          <div><img src="Icon.png" alt="" /></div>
+          <div>
+            <h4>Planning</h4>
+            <p>
+              Etiam sed odio dictum, tempus velit non, sollicitudin nutoeque.
+              Donec quis aliquet velit.
+            </p>
+            <button>Read More ➠</button>
+          </div>
+        </div>
+        <div class="Branding">
+          <div><img src="image (5).png" alt="" /></div>
+          <div>
+            <h4>Branding</h4>
+            <p>
+              Etiam sed odio dictum, tempus velit non, sollicitudin nutoeque.
+              Donec quis aliquet velit.
+            </p>
+            <button>Read More ➠</button>
+          </div>
+        </div>
+        <div class="Marketing">
+          <div><img src="image (6).png" alt="" /></div>
+          <div>
+            <h4>Marketing</h4>
+            <p>
+              Etiam sed odio dictum, tempus velit non, sollicitudin nutoeque.
+              Donec quis aliquet velit.
+            </p>
+            <button>Read More ➠</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- growing result -->
+    <div class="global-brands-section">
+      <h2>
+        We work for better growing result <br />
+        step by step
+      </h2>
+      <p>
+        Crafting compelling digital experiences that captivate audiences and
+        drive meaningful connections.
+      </p>
+      <!-- cards -->
+      <div class="cards">
+        <div class="card-1">
+          <h2>01</h2>
+          <h3>Briefing & Research</h3>
+          <p>
+            Nor is there anyone who loves or pursues or desires to obtain <br />
+            pain litselfe because. Nor is there anyone who loves <br />
+            or pursues or desires to obtain pain litselfe because.
+          </p>
+        </div>
+        <div class="card-2">
+          <h2>02</h2>
+          <h3>Brainstorming</h3>
+          <p>
+            Nor is there anyone who loves or pursues or desires to obtain <br />
+            pain litselfe because. Nor is there anyone who loves <br />
+            or pursues or desires to obtain pain litselfe because.
+          </p>
+        </div>
+        <div class="card-3">
+          <h2>03</h2>
+          <h3>Production</h3>
+          <p>
+            Nor is there anyone who loves or pursues or desires to obtain <br />
+            pain litselfe because. Nor is there anyone who loves <br />
+            or pursues or desires to obtain pain litselfe because.
+          </p>
+        </div>
+        <div class="card-4">
+          <h2>04</h2>
+          <h3>Quality Assurance</h3>
+          <p>
+            Nor is there anyone who loves or pursues or desires to obtain <br />
+            pain litselfe because. Nor is there anyone who loves <br />
+            or pursues or desires to obtain pain litselfe because.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- clients and partners reviews -->
+    <section style="background-color: #f8f8f8; margin-bottom: 30px">
+      <div class="reviews-headings">
+        <h2>
+          What our clients and <br />
+          partners reviews
+        </h2>
         <div>
-            <h1>Next-Gen <br>
-                Storytelling <br>
-                Digital Agency
-            </h1>
-            <p>Etiam sed odio dictum, tempus velit non, sollicitudin neque. <br> Donec quis aliquet velit. Aliquam convallis dapibus purus.</p>
-            
-                <button>Explore More</button>
-            
+          <p>
+            Crafting compelling digital experiences that captivate <br />
+            audiences and drive meaningful connections.
+          </p>
+          <button>View All Blogs ➠</button>
         </div>
-        <div class="img-section">
-            <img src="image 2.png" alt="">
+      </div>
+      <!-- review cards -->
+      <div class="review-cards-container">
+        <div class="review-card-1">
+          <div
+            style="
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              font-size: 18px;
+              font-family: 'Bricolage Grotesque', sans-serif;
+              padding: 0px 20px;
+            "
+          >
+            <p>Application</p>
+            <p>03 April, 2025</p>
+          </div>
 
-            <div class="header-img-style">
+          <h2
+            style="
+              font-size: 24px;
+              font-family: 'Bricolage Grotesque', sans-serif;
+              padding: 0px 20px;
+            "
+          >
+            Consulting Industry <br />
+            adapts to the changing <br />
+            business.
+          </h2>
 
-                <div class="years-Experience">
-                    <h2>10+</h2>
-                    <h4>Years of <br> Experience</h4>
-                </div>
-                <div class="divider"></div>
-                <div class="projects-handover">
-                    <h2>710+</h2>
-                    <h4>Projects <br> handover</h4>
-                </div>
-            </div>
+          <div
+            style="
+              display: flex;
+              gap: 30px;
+              align-items: center;
+              justify-items: center;
+              width: 100%;
+              padding: 20px;
+              box-sizing: border-box;
+            "
+          >
+            <div style="width: 50%; height: 2px; background-color: gray"></div>
+
+            <button
+              style="
+                border: none;
+                background: none;
+                color: black;
+                cursor: pointer;
+                font-size: 16px;
+                font-family: 'Bricolage Grotesque', sans-serif;
+              "
+            >
+              Read More ➠
+            </button>
+          </div>
+
+          <div style="text-align: center; padding: 10px 20px">
+            <img src="rvw.png" alt="" />
+          </div>
         </div>
-        
-     </header>
+        <div class="review-card-2">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-size: 18px;
+              font-family: 'Bricolage Grotesque', sans-serif;
+              padding: 0px 20px;
+            "
+          >
+            <p>Application</p>
+            <p>03 April, 2025</p>
+          </div>
 
-     <!-- global brands section -->
-      <section class="global-brands-section">
-        <h2>We're thrilled to partner with some <br>
-            of the biggest global brands</h2>
-            <p>Crafting compelling digital experiences that captivate audiences and drive meaningful connections.</p>
-            <!-- brands logo -->
-             <div class="brands-logo">
-                <img src="image 3.png" alt="">
-                <img src="image.png" alt="">
-                <img src="image (1).png" alt="">
-                <img src="image (2).png" alt="">
-                <img src="image (3).png" alt="">
-             </div>
-             <!-- img -->
-              <div class="brands-img">
-                <img src="image 3 (1).png" alt="">
-              </div>
-      </section>
-      <!--  Feature Service -->
-        <section class="feature-secvice">
-           <div>
-            <h2>Our Feature Services</h2>
-            <p>Etiam sed odio dictum, tempus velit non, sollicitudin neque. <br> Donec quis aliquet velit. Aliquam convallis dapibus purus.</p>
-            <button>View <br> All <br> Services</button>
-           </div>
-           <div class="rightSide">
+          <h2
+            style="
+              font-size: 24px;
+              font-family: 'Bricolage Grotesque', sans-serif;
+              padding: 0px 20px;
+            "
+          >
+            Consulting Industry <br />
+            adapts to the changing <br />
+            business.
+          </h2>
 
-            <div class="Planning">
-             <div><img src="Icon.png" alt=""></div>
-             <div>
-                <h4>Planning</h4>
-                <p>Etiam sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.</p>
-                <button>Read More ➠</button>
-             </div>
-            </div>
-            <div class="Branding">
-                <div><img src="image (5).png" alt=""></div>
-                <div>
-                   <h4>Branding</h4>
-                   <p>Etiam sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.</p>
-                   <button>Read More ➠</button>
-                </div>
-            </div>
-            <div class="Marketing">
-                <div><img src="image (6).png" alt=""></div>
-                <div>
-                   <h4>Marketing</h4>
-                   <p>Etiam sed odio dictum, tempus velit non, sollicitudin nutoeque. Donec quis aliquet velit.</p>
-                   <button>Read More ➠</button>
-                </div>
-            </div>
-           </div>
-        </section>
-        <!-- growing result -->
-        <div class="global-brands-section">
-            <h2>We work for better growing result <br>
-                step by step</h2>
-            <p>Crafting compelling digital experiences that captivate audiences and drive meaningful connections.</p>
-            <!-- cards -->
-             <div class="cards">
-                <div class="card-1">
-                    <h2>01</h2>
-                    <h3>Briefing & Research</h3>
-                    <p>Nor is there anyone who loves or pursues or desires to obtain <br> pain litselfe because. Nor is there anyone who loves <br> or pursues or desires to obtain pain litselfe because.</p>
-                </div>
-                <div class="card-2">
-                    <h2>02</h2>
-                    <h3>Brainstorming</h3>
-                    <p>Nor is there anyone who loves or pursues or desires to obtain <br> pain litselfe because. Nor is there anyone who loves <br> or pursues or desires to obtain pain litselfe because.</p>
-                </div>
-                <div class="card-3">
-                    <h2>03</h2>
-                    <h3>Production</h3>
-                    <p>Nor is there anyone who loves or pursues or desires to obtain <br> pain litselfe because. Nor is there anyone who loves <br> or pursues or desires to obtain pain litselfe because.</p>
-                </div>
-                <div class="card-4">
-                    <h2>04</h2>
-                    <h3>Quality Assurance</h3>
-                    <p>Nor is there anyone who loves or pursues or desires to obtain <br> pain litselfe because. Nor is there anyone who loves <br> or pursues or desires to obtain pain litselfe because.</p>
-                </div>
-             </div>
-           </div>
-        <!-- clients and partners reviews -->
-         <section style="background-color: #F8F8F8; margin-bottom: 30px;">
-            <div class="reviews-headings">
-                <h2>What our clients and <br>
-                    partners reviews</h2>
-                    <div>
-                        <p>Crafting compelling digital experiences that captivate <br> audiences and drive meaningful connections.</p>
-                    <button>View All Blogs ➠</button>
-                    </div>
-            </div>
-            <!-- review cards -->
-             <div class="review-cards-container">
-                <div class="review-card-1">
+          <div
+            style="
+              display: flex;
+              gap: 30px;
+              align-items: center;
+              justify-items: center;
+              width: 100%;
+              padding: 20px;
+              box-sizing: border-box;
+            "
+          >
+            <div style="width: 50%; height: 2px; background-color: gray"></div>
 
-                 <div style="display: flex; justify-content: space-around; align-items: center; font-size: 18px; font-family: 'Bricolage Grotesque', sans-serif; padding: 0px 20px;">
-                    <p>Application</p>
-                    <p>03 April, 2025</p>
-                 </div>
+            <button
+              style="
+                border: none;
+                background: none;
+                color: black;
+                cursor: pointer;
+                font-size: 16px;
+                font-family: 'Bricolage Grotesque', sans-serif;
+              "
+            >
+              Read More ➠
+            </button>
+          </div>
 
-                 <h2 style="font-size: 24px; font-family: 'Bricolage Grotesque', sans-serif; padding: 0px 20px;">Consulting Industry <br> adapts to the changing <br> business.</h2>
+          <div
+            style="text-align: center; padding-top: 10px; padding-bottom: 10px"
+          >
+            <img src="image (7).png" alt="" />
+          </div>
+        </div>
+        <div class="review-card-3">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-size: 18px;
+              font-family: 'Bricolage Grotesque', sans-serif;
+              padding: 0px 20px;
+            "
+          >
+            <p>Application</p>
+            <p>03 April, 2025</p>
+          </div>
 
-                 <div style="display: flex; gap: 30px; align-items: center; justify-items: center; width: 100%; padding: 20px; box-sizing: border-box;">
-                    <div style="width: 50%; height: 2px; background-color: gray;"></div>
-                    
-                    <button style=" border: none; background: none; color: black; cursor: pointer; font-size: 16px; font-family: 'Bricolage Grotesque', sans-serif;">
-                        Read More ➠</button>
-                </div>
-                
-                <div style="text-align: center; padding: 10px 20px">
-                    <img src="rvw.png" alt="">
-                </div>
+          <h2
+            style="
+              font-size: 24px;
+              font-family: 'Bricolage Grotesque', sans-serif;
+              padding: 0px 20px;
+            "
+          >
+            Consulting Industry <br />
+            adapts to the changing <br />
+            business.
+          </h2>
 
-                </div>
-                <div class="review-card-2">
+          <div
+            style="
+              display: flex;
+              gap: 30px;
+              align-items: center;
+              justify-items: center;
+              width: 100%;
+              padding: 20px;
+              box-sizing: border-box;
+            "
+          >
+            <div style="width: 50%; height: 2px; background-color: gray"></div>
 
-                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 18px; font-family: 'Bricolage Grotesque', sans-serif; padding: 0px 20px;">
-                        <p>Application</p>
-                        <p>03 April, 2025</p>
-                     </div>
+            <button
+              style="
+                border: none;
+                background: none;
+                color: black;
+                cursor: pointer;
+                font-size: 16px;
+                font-family: 'Bricolage Grotesque', sans-serif;
+              "
+            >
+              Read More ➠
+            </button>
+          </div>
 
-                     <h2 style="font-size: 24px; font-family: 'Bricolage Grotesque', sans-serif; padding: 0px 20px;">Consulting Industry <br> adapts to the changing <br> business.</h2>
+          <div
+            style="text-align: center; padding-top: 10px; padding-bottom: 10px"
+          >
+            <img src="image (8).png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <h2>
+          Let’s talk about a project,<br />
+          collaboration or an idea you may <br />
+          have
+        </h2>
+        <div>
+          <p>
+            We design exceptional brands, products, web apps, mobile apps,
+            websites for startups and enterprises.
+          </p>
+          <button>Let's Talk With</button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="footer">
+        <div class="footer-img"><img src="image 1.png" alt="" /></div>
+        <div>
+          <h2 class="pages">Pages</h2>
+          <a>Home</a>
+          <a>Services</a>
+          <a>Portfolio</a>
+          <a>Contact</a>
+        </div>
 
-                     <div style="display: flex; gap: 30px; align-items: center; justify-items: center; width: 100%; padding: 20px; box-sizing: border-box;">
-                        <div style="width: 50%; height: 2px; background-color: gray;"></div>
-                        
-                        <button style=" border: none; background: none; color: black; cursor: pointer; font-size: 16px; font-family: 'Bricolage Grotesque', sans-serif;">
-                            Read More ➠</button>
-                    </div>
-                    
-                    <div style="text-align: center; padding-top: 10px; padding-bottom: 10px;">
-                        <img src="image (7).png" alt="">
-                    </div>
+        <div class="cms">
+          <h2>CMS</h2>
+          <a>Integration</a>
+          <a>Customers</a>
+          <a>Case Studies</a>
+          <a>Our Blog</a>
+          <a>Careers</a>
+        </div>
 
-                </div>
-                <div class="review-card-3">
+        <div class="agency">
+          <h2>Branding Agency</h2>
+          <p>3F Mitaka Takagi Building, <br> Musashino-shi,80-0006 Japan</p>
+        </div>
+      </div>
 
-                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 18px; font-family: 'Bricolage Grotesque', sans-serif; padding: 0px 20px;">
-                        <p>Application</p>
-                        <p>03 April, 2025</p>
-                     </div>
-
-                     <h2 style="font-size: 24px; font-family: 'Bricolage Grotesque', sans-serif; padding: 0px 20px;">Consulting Industry <br> adapts to the changing <br> business.</h2>
-
-                     <div style="display: flex; gap: 30px; align-items: center; justify-items: center; width: 100%; padding: 20px; box-sizing: border-box;">
-                        <div style="width: 50%; height: 2px; background-color: gray;"></div>
-                        
-                        <button style=" border: none; background: none; color: black; cursor: pointer; font-size: 16px; font-family: 'Bricolage Grotesque', sans-serif;">
-                            Read More ➠</button>
-                    </div>
-                    
-                    <div style="text-align: center; padding-top: 10px; padding-bottom: 10px;">
-                        <img src="image (8).png" alt="">
-                    </div>
-
-                </div>
-             </div>
-         </section>
-         <!-- Footer -->
-          <footer>
-            <div class="footer-container">
-                <h2>Let’s talk about a project,<br>
-                    collaboration or an idea you may <br>
-                    have</h2>
-                   <div>
-                    <p>We design exceptional brands, products, web apps, mobile apps, websites for startups and enterprises.</p>
-                    <button>Let's Talk With</button>
-                   </div>
-            </div>
-          </footer>
+      <h3 style="padding-bottom: 25px; padding-top: 25px; padding-left: 14px; max-width: 1200px; margin: 0 auto; font-family: 'Bricolage Grotesque', sans-serif; color: #787878;">All Right Reserved © 2024 Digiso</h3>
+    </footer>
     <script>
-        function showMenuIcon(){
-            const menuIcon = document.querySelector('.mobile-menu');
-            menuIcon.classList.add('active'); 
-        }
-        
-        function hideMenuIcon(){
-            const menuIconHide = document.querySelector('.mobile-menu');
-            menuIconHide.classList.remove('active'); 
-        }
+      function showMenuIcon() {
+        const menuIcon = document.querySelector(".mobile-menu");
+        menuIcon.classList.add("active");
+      }
+
+      function hideMenuIcon() {
+        const menuIconHide = document.querySelector(".mobile-menu");
+        menuIconHide.classList.remove("active");
+      }
     </script>
-</body>
+  </body>
 </html>
